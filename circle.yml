@@ -15,7 +15,7 @@ jobs:
       - image: buildpack-deps:trusty
     steps:
       - run: bash ci/security-checks.sh
-  deployment:
+  deploy:
     docker:
       - image: buildpack-deps:trusty
     staging:
