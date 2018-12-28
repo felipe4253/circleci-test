@@ -4,6 +4,15 @@ machine:
   java:
     version: oraclejdk8
 
+jobs:
+  checkout_code:
+        <<: *machine_config
+        steps:
+            - <<: *restore_repo
+            - <<: *install_dependencies
+            - <<: *cache_dependencies
+            - checkout
+    
 test:
   pre:
     - bash ci/security-checks.sh
