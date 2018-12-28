@@ -16,7 +16,9 @@ jobs:
     staging:
       branch: master
       heroku:
-        appname: staging-spring-tests
+        appname: circle-ci-test
+      steps:
+        - run: echo "deploy"
 
 general:
   artifacts:
