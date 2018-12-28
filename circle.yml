@@ -24,6 +24,17 @@ jobs:
         appname: circle-ci-test
     steps:
       - run: echo "deploy"
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
 
 general:
   artifacts:
