@@ -7,12 +7,17 @@ machine:
 jobs:
   build:
     docker:
+      - image: buildpack-deps:trusty
     steps:
       - run: echo "Test"
   test:
+    docker:
+      - image: buildpack-deps:trusty
     steps:
       - run: bash ci/security-checks.sh
   deployment:
+    docker:
+      - image: buildpack-deps:trusty
     staging:
       branch: master
       heroku:
