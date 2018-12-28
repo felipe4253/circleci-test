@@ -8,9 +8,9 @@ jobs:
   build:
     docker:
       steps:
-      - run:
-          name: Running tests
-          command: echo "Test"
+        - run:
+            name: Running tests
+            command: echo "Test"
 
     
 test:
