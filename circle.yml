@@ -17,8 +17,8 @@ jobs:
       branch: master
       heroku:
         appname: circle-ci-test
-      steps:
-        - run: echo "deploy"
+    steps:
+      - run: echo "deploy"
 
 general:
   artifacts:
