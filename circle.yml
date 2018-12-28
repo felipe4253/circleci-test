@@ -5,7 +5,7 @@ machine:
     version: oraclejdk8
 
 jobs:
-  checkout_code:
+  build:
         steps:
             - checkout
     
