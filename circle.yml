@@ -7,7 +7,7 @@ machine:
 jobs:
   build:
     docker:
-        - image: buildpack-deps:trusty
+      - image: buildpack-deps:trusty
     
 test:
   pre:
