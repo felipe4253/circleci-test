@@ -6,6 +6,7 @@ machine:
 
 jobs:
   build:
+    docker:
       steps:
       - run:
           name: Running tests
