@@ -7,7 +7,9 @@ machine:
 jobs:
   build:
     docker:
-      - image: buildpack-deps:trusty
+      steps:
+        - run: echo "teste"
+
     
 test:
   pre:
