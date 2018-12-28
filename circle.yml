@@ -7,9 +7,6 @@ machine:
 jobs:
   checkout_code:
         steps:
-            - <<: *restore_repo
-            - <<: *install_dependencies
-            - <<: *cache_dependencies
             - checkout
     
 test:
