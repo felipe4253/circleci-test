@@ -7,18 +7,16 @@ machine:
 jobs:
   build:
     docker:
-      steps:
-        - run: echo "Test"
-    
-test:
-  pre:
-    - bash ci/security-checks.sh
-
-deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: staging-spring-tests
+    steps:
+      - run: echo "Test"
+  test:
+    pre:
+      - bash ci/security-checks.sh
+  deployment:
+    staging:
+      branch: master
+      heroku:
+        appname: staging-spring-tests
 
 general:
   artifacts:
