@@ -6,7 +6,6 @@ machine:
 
 jobs:
   checkout_code:
-        <<: *machine_config
         steps:
             - <<: *restore_repo
             - <<: *install_dependencies
