@@ -6,9 +6,9 @@ machine:
 
 jobs:
   build:
-    docker:
       steps:
         - run: echo "teste"
+        - run: echo "teste2"
 
     
 test:
